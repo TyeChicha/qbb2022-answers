@@ -34,13 +34,13 @@ plt.xlim([15, 60])
 plt.ylim([0, 100])
 plt.savefig('ex2b.png')
 
-model = smf.ols(formula = "Mother_age ~ 1 + mcount", data = data)
-results = model.fit()
-results.summary()
-
-model = smf.ols(formula = "Father_age ~ 1 + fcount", data = data)
-results = model.fit()
-results.summary()
+# model = smf.ols(formula = "Mother_age ~ 1 + mcount", data = data)
+# results = model.fit()
+# results.summary()
+#
+# model = smf.ols(formula = "Father_age ~ 1 + fcount", data = data)
+# results = model.fit()
+# results.summary()
 
 fathermodel = smf.ols(formula = "fcount ~ 1 + Father_age", data = data).fit()
 #fresults = fathermodel.fit()
