@@ -1,0 +1,5 @@
+#arange makes a list with the first argu,ent as the starting point with intervals by the third argument up to but not including the secoind. so it made a list like so .55, .60, .65, ...1.0 however, it is not necessarily to the right number of decimal places
+
+#around rounds each number from arange to the nearest 2nd decimal place because we set it to 2 decimal places
+
+#D. the trtansmission rate of the sperm should be unbiased but this study tests for "unfair" sperm transmission the same way our simulation tests for unfair coin tosses or the real probability of getting heads for an unfair coin. the transmission rate is synonymous with the heads probability and the number of sperm is the same as our toss count. the patterns between the two simulations are the same where we see the power increase as the number of tosses/sperm increase  and as the probability of heads/transmission increases. we also see the sae pattern of it taking more n and higher probability to produce high power when we correct the p values. also this simulation is looking at the phenomenon of transmission distortion where allele transmission does not follow mendels law of segregation.
