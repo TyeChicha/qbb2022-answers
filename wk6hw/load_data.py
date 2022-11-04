@@ -49,22 +49,38 @@ def main():
             mat2[i][j]=temp[0][2]
     #diff
     mat3=mat2-mat1
+    mat32=mat3
     #mat3=numpy.log(mat3)
     mat3=remove_dd_bg(mat3)
     
     #mat1=numpy.nan_to_num(mat3,nan=0,neginf=0)
     #mat2=numpy.nan_to_num(mat3,nan=0,neginf=0)
     numpy.nan_to_num(mat3,copy=False,nan=0,neginf=0)
-    print(mat3)
+    #print(mat3)    #sanity check
     
-    
-    fig,ax=plt.subplots(ncols=3)
+   
+    fig,ax=plt.subplots(ncols=3)                           #make figures of tads
     ax[0].imshow(mat1,vmin=0,vmax=300,cmap='magma')
     ax[1].imshow(mat2,vmin=0,vmax=300,cmap='magma')
     ax[2].imshow(mat3,norm=colors.CenteredNorm(),cmap='seismic')
-    plt.savefig(out_fname)
-    plt.show()
-    
+    #plt.savefig(out_fname)
+    #plt.show()
+    insulation(mat32)
+
+
+def insulation(mat):
+    inscore=[]
+    for x in range(mat.shape[0]):
+        hold = numpy.mean(mat[(x - 5):x][x:(x + 5)])
+        inscore.append(hold)
+    fig, ax = plt.subplots(2, 1, gridspec_kw={'height_ratios': [3, 1]}, figsize=(5,6.25))
+    ax[0].axis('off')
+    plt.margins(x=0)
+    ax[1].set_xlim(10400000, 13400000)
+    plt.subplots_adjust(left=0.15,bottom=0.1,right=1.0,top=1.0,wspace=0.4,hspace=0.0) 
+    ax[1].plot(inscore)
+
+
 def remove_dd_bg(mat):
     N = mat.shape[0]
     mat2 = numpy.copy(mat)
