@@ -1,6 +1,6 @@
 # Week 1 Genome Assembly -- Feedback
 
-1 + 0 + 0 + 1 + 0.5 + 1 + 1 + 1 + 0.75 + 1 = 7.25 points out of 10 possible points
+1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 0.75 + 1 = 9.75 points out of 10 possible points
 
 1. Question 1.1, 1.4 how many reads (0.5 pts each)
 
@@ -8,11 +8,11 @@
 
 2. Question 1.2, 1.4 simulation script(s)
 
-  * Don't see the code; please add --> +0
+  * script is set up only for question 1.4, should be more generalizable, taking in command line arguments or calling functions with parameters that can be changed
 
 3. Question 1.2, 1.4 plotting script(s)
 
-  * Don't see the code; please add --> +0
+  * script is set up only for question 1.4, should be more generalizable, taking in command line arguments or calling functions with parameters that can be changed
 
 4. Question 1.2, 1.4 histograms with overlaid Poisson distributions (0.5 pts each)
 
@@ -21,7 +21,7 @@
 
 5. Question 1.3, 1.4 how much of genome not sequenced/comparison to Poisson expectations (0.5 pts each, 0.25 for answer and 0.25 for code)
 
-  * --> +0.5, please add code
+  * --> +1
   * are these differences a problem or close enough?
 
 6. Question 2 De novo assembly (0.5 pts each, 0.25 for answer and 0.25 for code)
