@@ -20,11 +20,10 @@ print(pval)
 fig,ax=plt.subplots()
 ax.scatter(pval['SNP'],pval['P'])
 plt.show()
-#this generates nothing and gets stuck in something forever but theres no loop to get stuck in.
-#finally generated figs... ran for like 30mins...
+
 #GSgwas.png and CBgwas.png
 ./plot.py pltdata.eigenvec plink.frq GSphenotyperesults.qassoc CBphenotyperesults.qassoc 
 
 6.GS  rs269622   p=0.0001018
 
-
+git add effectsize.png GSgwas.png CBgwas.png 
